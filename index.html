@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form>
+                <h2>Please Enter Your Details For Our Dating Website!</h2>
+                    <fieldset>
+                        <legend>Your Face</legend>
+                        <label for="avatar">Your Image:</label>
+                        <input type="file"  id="avatar"  name="avatar" required><br>
+                        <label  for="preview">Image Preview:</label><img src="" alt="" id="preview">
+                        
+                    </fieldset>
+           
+        <fieldset>
+            <legend>Your General Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Your full name" id="name" required><br>
+            <label class="gender" for="gender">Gender:
+                <input type="radio" name="sex" id="gender" required>Male<input type="radio" name="sex" required id="gender">Female<br>
+            </label>
+            <label name="age" for="age">Age:
+                <input type="number" id="age" required><br>
+            </label>
+            <label name="date" for="date">
+                Date of birth: <input type="date" id="date"><br>
+            </label>
+            <label name="color" for="color">Favorite color: <input type="color" id="color"><br></label>
+            <label for="country">Which country: </label>
+            <select name="country" id="country">
+                <option value="0">No selection</option>
+                <option value="1" >Nigeria</option>
+                <option value="2" >Ghana</option>
+                <option value="3" >USA</option>
+                <option value="4" >Korea</option>
+                <option value="5" >Uk</option>
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>Your Indicators</legend>
+            <label for="range" name="range">
+                Height:<span class="short">Short</span><input type="range" class="range1"  min="0" max="100" id="range"><span class="tall">Tall</span>
+            </label><br>
+            <label name="range2" for="range2">
+                Salary:<span class="poor">Poor</span><input type="range"   min="0" max="100" id="range2" class="range"><span class="rich">Rich</span></label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Your Contact Information</legend>
+            <label for="email" name="email">Email: <input type="email" id="email" required><br></label>
+            <label for="mobile" >Mobile: <input type="tel" id="mobile"><br></label>
+            <label for="address" name="address" style="vertical-align: top" class="address">Address:
+            </label>
+            <textarea name="address" id="address" type="text" cols="40" rows="4"></textarea><br>
+            <label  name="method" class="method" >
+                Method to contact you: <input type="checkbox">Email<input type="checkbox">Whatsapp<input type="checkbox">In-app chat<br>
+            </label>
+            
+        </fieldset>
+       <input type="submit" class="btn" name="submit" value="Submit"><br>
+    </div>
+</div>
+    </div>
+</form>
+    </div>
+    <script src="image.js"></script>
+</body>
+</html>
